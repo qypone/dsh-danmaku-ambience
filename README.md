@@ -6,11 +6,21 @@ Ambient danmaku for the DeepSeek Harness Web UI. Short lines drift across the wi
 
 ## Install
 
-```sh
-dsh plugin --profile <your-profile> add dsh-danmaku-ambience
+Published on npm as `dsh-danmaku-ambience` (current: 1.0.1), for DSH 0.2.x.
+
+**Desktop app** — open **Plugins → Add plugin** and paste the package name:
+
+```
+dsh-danmaku-ambience
 ```
 
-Or open **Plugins → Add plugin** in the Web UI and paste the package name.
+**`dsh web` or headless** — install into that profile from a terminal:
+
+```sh
+dsh plugin --profile web add dsh-danmaku-ambience
+```
+
+The desktop profile is managed by the app itself, so the CLI refuses `--profile desktop`; use the Plugins page there.
 
 ## Moods
 
