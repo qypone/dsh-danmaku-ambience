@@ -45,13 +45,13 @@ window.__ModuleLoader__.load({
         interval: 5000,
         lanes: 8,
         speed: 250,
-        fontSize: 15,
-        weight: 700,
+        fontSize: 16,
+        weight: 600,
         spacing: '0.01em',
         vertical: false,
         hues: [352, 8, 22, 340],
         sat: 82,
-        light: 58,
+        light: 74,
       },
       zen: {
         interval: 30000,
@@ -63,36 +63,36 @@ window.__ModuleLoader__.load({
         vertical: true,
         hues: [186, 196, 176],
         sat: 34,
-        light: 66,
+        light: 74,
       },
       encourager: {
         interval: 11000,
         lanes: 6,
         speed: 155,
-        fontSize: 15,
+        fontSize: 16,
         weight: 500,
         spacing: '0.02em',
         vertical: false,
         hues: [36, 46, 22, 100],
-        sat: 88,
-        light: 60,
+        sat: 86,
+        light: 74,
       },
       companion: {
         interval: 17000,
         lanes: 6,
         speed: 120,
-        fontSize: 15,
+        fontSize: 16,
         weight: 500,
         spacing: '0.03em',
         vertical: false,
         hues: [268, 248, 288, 216],
         sat: 72,
-        light: 70,
+        light: 76,
       },
     };
     const ORDER = ['workaholic', 'zen', 'encourager', 'companion'];
     // `scale` is a user multiplier on each mode's base font size.
-    const DEFAULT_STATE = { mode: 'encourager', density: 1, opacity: 0.85, scale: 1 };
+    const DEFAULT_STATE = { mode: 'encourager', density: 1, opacity: 0.92, scale: 1 };
     const DENSITY = { min: 0.4, max: 2.2, step: 0.1 };
     const OPACITY = { min: 0.2, max: 1, step: 0.05 };
     // Font scale: 0.7x .. 1.8x of the mode baseline, in 0.1 steps.
@@ -454,7 +454,10 @@ window.__ModuleLoader__.load({
         // `paint-order: stroke fill`; the blur is a halo that survives on
         // busy backgrounds such as code blocks.
         stroke: 'rgba(8,8,12,.92)',
-        glow: '0 0 3px rgba(0,0,0,.85), 0 0 8px rgba(0,0,0,.45)',
+        // One tight, barely-offset shadow instead of a wide two-layer blur: a
+        // big halo smears the glyph edge and reads as "blurry" at 15px, while
+        // the stroke already supplies the local backdrop.
+        glow: '0 1px 2px rgba(0,0,0,.55)',
       };
     }
 
@@ -859,11 +862,14 @@ window.__ModuleLoader__.load({
          transcript, gray sidebar, code blocks, or a dark theme. */
       .dmb-line{position:absolute;left:0;white-space:nowrap;
         color:var(--dmb-ink);
-        font-family:inherit;font-size:var(--dmb-size,15px);font-weight:var(--dmb-weight,500);
+        font-family:inherit;font-size:var(--dmb-size,16px);font-weight:var(--dmb-weight,500);
         letter-spacing:var(--dmb-spacing,0);line-height:1.45;
-        -webkit-text-stroke:2.5px var(--dmb-stroke,rgba(8,8,12,.92));
+        /* Proportional stroke: a fixed 2.5px ate ~17% of a 15px glyph, so the
+           fill read as a thin sliver. The ink is light now (L74), so the rim
+           only has to define the silhouette: ~7.5% of the em. */
+        -webkit-text-stroke:max(1px,calc(var(--dmb-size,16px) * .075)) var(--dmb-stroke,rgba(8,8,12,.92));
         paint-order:stroke fill;
-        text-shadow:var(--dmb-glow,0 0 3px rgba(0,0,0,.85));will-change:transform;
+        text-shadow:var(--dmb-glow,0 1px 2px rgba(0,0,0,.55));will-change:transform;
         animation-name:dmb-scroll;animation-timing-function:linear;animation-fill-mode:forwards}
       @keyframes dmb-scroll{
         0%{transform:translate3d(var(--dmb-from,100vw),0,0);opacity:0}
@@ -884,7 +890,7 @@ window.__ModuleLoader__.load({
       /* Punctuated zen copy (English) keeps its sentence shape as one line. */
       .dmb-run{white-space:nowrap;color:var(--dmb-ink);
         font-size:var(--dmb-size,13px);line-height:1.4;
-        -webkit-text-stroke:calc(var(--dmb-size,13px) * .1) var(--dmb-stroke,rgba(8,8,12,.82));
+        -webkit-text-stroke:max(.75px,calc(var(--dmb-size,13px) * .075)) var(--dmb-stroke,rgba(8,8,12,.82));
         paint-order:stroke fill;
         text-shadow:var(--dmb-glow,none)}
       /* The stroke tracks the font size so a scaled-up column keeps the same
@@ -893,7 +899,7 @@ window.__ModuleLoader__.load({
       .dmb-col-cell{display:block;width:1.3em;text-align:center;line-height:1.25;
         font-size:var(--dmb-size,13px);
         color:var(--dmb-ink);
-        -webkit-text-stroke:calc(var(--dmb-size,13px) * .12) var(--dmb-stroke,rgba(8,8,12,.82));
+        -webkit-text-stroke:max(.75px,calc(var(--dmb-size,13px) * .075)) var(--dmb-stroke,rgba(8,8,12,.82));
         paint-order:stroke fill;
         text-shadow:var(--dmb-glow,none)}
       @keyframes dmb-fall{

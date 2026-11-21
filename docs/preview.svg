@@ -4,26 +4,26 @@
 <text x="24" y="34" font-size="15" font-weight="600" fill="#2b2b2f">dsh-danmaku-ambience</text>
 <line x1="0" y1="52" x2="880" y2="52" stroke="#ececee"/>
 <text x="24" y="76" font-size="12" font-weight="600" fill="#6b6b73">workaholic</text>
-<text x="120" y="84" font-size="15" font-weight="700" fill="hsl(352 82% 58%)" stroke="#08080c" stroke-opacity="0.92" stroke-width="2.50" paint-order="stroke" style="letter-spacing:0.01em">进度条不会自己走</text>
-<text x="150" y="114" font-size="15" font-weight="700" fill="hsl(8 82% 58%)" stroke="#08080c" stroke-opacity="0.92" stroke-width="2.50" paint-order="stroke" style="letter-spacing:0.01em">先写测试 再庆祝</text>
-<text x="180" y="144" font-size="15" font-weight="700" fill="hsl(22 82% 58%)" stroke="#08080c" stroke-opacity="0.92" stroke-width="2.50" paint-order="stroke" style="letter-spacing:0.01em">时间这种资源没有退款</text>
+<text x="120" y="84" font-size="16" font-weight="600" fill="hsl(352 82% 74%)" stroke="#08080c" stroke-opacity="0.92" stroke-width="1.20" paint-order="stroke" style="letter-spacing:0.01em">进度条不会自己走</text>
+<text x="150" y="114" font-size="16" font-weight="600" fill="hsl(8 82% 74%)" stroke="#08080c" stroke-opacity="0.92" stroke-width="1.20" paint-order="stroke" style="letter-spacing:0.01em">先写测试 再庆祝</text>
+<text x="180" y="144" font-size="16" font-weight="600" fill="hsl(22 82% 74%)" stroke="#08080c" stroke-opacity="0.92" stroke-width="1.20" paint-order="stroke" style="letter-spacing:0.01em">时间这种资源没有退款</text>
 <line x1="0" y1="172" x2="880" y2="172" stroke="#ececee"/>
 <text x="24" y="196" font-size="12" font-weight="600" fill="#6b6b73">zen</text>
-<text x="120" y="202" text-anchor="middle" font-size="13" font-weight="400" fill="hsl(186 34% 66%)" stroke="#08080c" stroke-opacity="0.82" stroke-width="1.56" paint-order="stroke" style="letter-spacing:0">一</text>
-<text x="120" y="220" text-anchor="middle" font-size="13" font-weight="400" fill="hsl(186 34% 66%)" stroke="#08080c" stroke-opacity="0.82" stroke-width="1.56" paint-order="stroke" style="letter-spacing:0">件</text>
-<text x="120" y="238" text-anchor="middle" font-size="13" font-weight="400" fill="hsl(186 34% 66%)" stroke="#08080c" stroke-opacity="0.82" stroke-width="1.56" paint-order="stroke" style="letter-spacing:0">事</text>
-<text x="310" y="202" text-anchor="middle" font-size="13" font-weight="400" fill="hsl(196 34% 66%)" stroke="#08080c" stroke-opacity="0.82" stroke-width="1.56" paint-order="stroke" style="letter-spacing:0">呼</text>
-<text x="310" y="220" text-anchor="middle" font-size="13" font-weight="400" fill="hsl(196 34% 66%)" stroke="#08080c" stroke-opacity="0.82" stroke-width="1.56" paint-order="stroke" style="letter-spacing:0">吸</text>
+<text x="120" y="202" text-anchor="middle" font-size="13" font-weight="400" fill="hsl(186 34% 74%)" stroke="#08080c" stroke-opacity="0.82" stroke-width="1.00" paint-order="stroke" style="letter-spacing:0">一</text>
+<text x="120" y="220" text-anchor="middle" font-size="13" font-weight="400" fill="hsl(186 34% 74%)" stroke="#08080c" stroke-opacity="0.82" stroke-width="1.00" paint-order="stroke" style="letter-spacing:0">件</text>
+<text x="120" y="238" text-anchor="middle" font-size="13" font-weight="400" fill="hsl(186 34% 74%)" stroke="#08080c" stroke-opacity="0.82" stroke-width="1.00" paint-order="stroke" style="letter-spacing:0">事</text>
+<text x="310" y="202" text-anchor="middle" font-size="13" font-weight="400" fill="hsl(196 34% 74%)" stroke="#08080c" stroke-opacity="0.82" stroke-width="1.00" paint-order="stroke" style="letter-spacing:0">呼</text>
+<text x="310" y="220" text-anchor="middle" font-size="13" font-weight="400" fill="hsl(196 34% 74%)" stroke="#08080c" stroke-opacity="0.82" stroke-width="1.00" paint-order="stroke" style="letter-spacing:0">吸</text>
 <text x="856" y="222" text-anchor="end" font-size="11" fill="#8a8a92">vertical column</text>
 <line x1="0" y1="292" x2="880" y2="292" stroke="#ececee"/>
 <text x="24" y="316" font-size="12" font-weight="600" fill="#6b6b73">encourager</text>
-<text x="120" y="324" font-size="15" font-weight="500" fill="hsl(36 88% 60%)" stroke="#08080c" stroke-opacity="0.92" stroke-width="2.50" paint-order="stroke" style="letter-spacing:0.01em">你刚才那段写得挺清楚</text>
-<text x="150" y="354" font-size="15" font-weight="500" fill="hsl(46 88% 60%)" stroke="#08080c" stroke-opacity="0.92" stroke-width="2.50" paint-order="stroke" style="letter-spacing:0.01em">看得见的进步</text>
-<text x="180" y="384" font-size="15" font-weight="500" fill="hsl(22 88% 60%)" stroke="#08080c" stroke-opacity="0.92" stroke-width="2.50" paint-order="stroke" style="letter-spacing:0.01em">今天也辛苦啦</text>
+<text x="120" y="324" font-size="16" font-weight="500" fill="hsl(36 86% 74%)" stroke="#08080c" stroke-opacity="0.92" stroke-width="1.20" paint-order="stroke" style="letter-spacing:0.01em">你刚才那段写得挺清楚</text>
+<text x="150" y="354" font-size="16" font-weight="500" fill="hsl(46 86% 74%)" stroke="#08080c" stroke-opacity="0.92" stroke-width="1.20" paint-order="stroke" style="letter-spacing:0.01em">看得见的进步</text>
+<text x="180" y="384" font-size="16" font-weight="500" fill="hsl(22 86% 74%)" stroke="#08080c" stroke-opacity="0.92" stroke-width="1.20" paint-order="stroke" style="letter-spacing:0.01em">今天也辛苦啦</text>
 <line x1="0" y1="412" x2="880" y2="412" stroke="#ececee"/>
 <text x="24" y="436" font-size="12" font-weight="600" fill="#6b6b73">companion</text>
-<text x="120" y="444" font-size="15" font-weight="500" fill="hsl(268 72% 70%)" stroke="#08080c" stroke-opacity="0.92" stroke-width="2.50" paint-order="stroke" style="letter-spacing:0.01em">我在这儿呢</text>
-<text x="150" y="474" font-size="15" font-weight="500" fill="hsl(248 72% 70%)" stroke="#08080c" stroke-opacity="0.92" stroke-width="2.50" paint-order="stroke" style="letter-spacing:0.01em">要不要放首歌</text>
-<text x="180" y="504" font-size="15" font-weight="500" fill="hsl(288 72% 70%)" stroke="#08080c" stroke-opacity="0.92" stroke-width="2.50" paint-order="stroke" style="letter-spacing:0.01em">伸个懒腰吧</text>
+<text x="120" y="444" font-size="16" font-weight="500" fill="hsl(268 72% 76%)" stroke="#08080c" stroke-opacity="0.92" stroke-width="1.20" paint-order="stroke" style="letter-spacing:0.01em">我在这儿呢</text>
+<text x="150" y="474" font-size="16" font-weight="500" fill="hsl(248 72% 76%)" stroke="#08080c" stroke-opacity="0.92" stroke-width="1.20" paint-order="stroke" style="letter-spacing:0.01em">要不要放首歌</text>
+<text x="180" y="504" font-size="16" font-weight="500" fill="hsl(288 72% 76%)" stroke="#08080c" stroke-opacity="0.92" stroke-width="1.20" paint-order="stroke" style="letter-spacing:0.01em">伸个懒腰吧</text>
 <text x="24" y="544" font-size="11" fill="#8a8a92">Lines carry a near-black outline instead of a background, so they stay readable over any surface.</text>
 </svg>

@@ -1,6 +1,6 @@
 {
   "name": "dsh-danmaku-ambience",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "Streams short lines across the DSH window in four moods with configurable pacing, font size, and opacity.",
   "keywords": [
@@ -31,7 +31,8 @@
     "client.js",
     "cordis.patch.yml",
     "locale/*.json",
-    "docs",
+    "docs/DETAIL.md",
+    "docs/preview.png",
     "icon.svg",
     "assets",
     "screenshots.json",

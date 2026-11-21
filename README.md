@@ -32,7 +32,7 @@ Preferences are stored in `localStorage` and survive a reload.
 
 ## How the text stays readable
 
-Lines have no background pill. Each line is drawn in its mood hue with a near-black outline (`-webkit-text-stroke` plus `paint-order: stroke fill`) and a soft halo, so the copy stays legible over the white transcript, the gray sidebar, code blocks, and either theme. The worst ink-to-outline contrast across every hue is above 5:1.
+Lines have no background pill. Each line is a light, saturated ink (L74–76 in both themes) inside a near-black outline (`-webkit-text-stroke` at 7.5% of the font size, plus `paint-order: stroke fill`) with a tight shadow. The outline is what defines the glyph against the white transcript, the gray sidebar, and code blocks; the light ink is what stays visible over a dark theme. Worst ink-to-outline contrast across every hue is 7.7:1, and ink-to-dark-page is at least 6.4:1.
 
 Zen mode stacks one character per box rather than using `writing-mode: vertical-rl`, because vertical writing modes rely on Japanese glyph forms and misplace Chinese punctuation.
 
