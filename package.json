@@ -1,0 +1,64 @@
+{
+  "name": "@local/danmaku",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Streams short lines across the DSH window in four moods with configurable pacing, font size, and opacity.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "danmaku",
+    "ambience",
+    "decoration"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "qypone"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qypone/dsh-danmaku-ambience"
+  },
+  "homepage": "https://github.com/qypone/dsh-danmaku-ambience",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "icon": "assets/icon-180.png",
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg",
+    "assets",
+    "screenshots.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "name": "dsh-danmaku-ambience",
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-settings-general"
+      ]
+    },
+    "compatibility": {
+      "dsh": ">=0.2.1-rc.1 <0.3.0-0"
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/qypone/dsh-danmaku-ambience/issues"
+  }
+}

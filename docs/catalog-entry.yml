@@ -1,0 +1,7 @@
+url: https://github.com/qypone/dsh-danmaku-ambience
+name: qypone/dsh-danmaku-ambience
+category: fun
+description:
+  en: Streams lines of text across the DSH window in four moods, each with its own pace, copy, colour and motion, and lets you adjust pacing, font size and opacity from a corner capsule.
+  zh: 在 DSH 窗口上飘出文字弹幕，四种氛围各有自己的节奏、文案、配色和动效，可在右下角胶囊里调节奏、字号和不透明度。
+icon: https://raw.githubusercontent.com/qypone/dsh-danmaku-ambience/main/assets/icon-180.png
