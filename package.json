@@ -1,5 +1,5 @@
 {
-  "name": "@local/danmaku",
+  "name": "dsh-danmaku-ambience",
   "version": "1.0.0",
   "type": "module",
   "description": "Streams short lines across the DSH window in four moods with configurable pacing, font size, and opacity.",
@@ -38,10 +38,6 @@
     "README.md",
     "LICENSE"
   ],
-  "publishConfig": {
-    "name": "dsh-danmaku-ambience",
-    "access": "public"
-  },
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"

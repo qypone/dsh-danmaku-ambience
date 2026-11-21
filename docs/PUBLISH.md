@@ -53,14 +53,13 @@ npm login
 npm publish
 ```
 
-`package.json` 里已配置：
+`package.json` 里 `name` 就是发布名——npm 只认这个字段，**`publishConfig.name` 是无效的**（npm 不支持改名发布）：
 
 ```jsonc
-"name": "@local/danmaku",                        // 本地安装用这个名字
-"publishConfig": { "name": "dsh-danmaku-ambience", "access": "public" }
+"name": "dsh-danmaku-ambience"
 ```
 
-`npm publish` 会自动以 `dsh-danmaku-ambience` 发布，**同时本地 profile 里的 `@local/danmaku` 安装不受影响**。
+本地安装和公开发布用同一个名字，所以 `dsh plugin add dsh-danmaku-ambience` 对两者都成立。
 
 发布后验证：
 

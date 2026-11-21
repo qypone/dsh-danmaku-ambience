@@ -21,14 +21,14 @@
  *   recently used sentences so a cycle does not repeat until the pool is spent.
  */
 window.__ModuleLoader__.load({
-  id: '@local/danmaku',
+  id: 'dsh-danmaku-ambience',
   factory(require) {
     const React = require('react');
     const { useState, useEffect, useRef, useCallback, useSyncExternalStore } = React;
     const h = React.createElement;
 
     const NS = 'danmaku';
-    const STORAGE_KEY = '@local/danmaku/v1';
+    const STORAGE_KEY = 'dsh-danmaku-ambience/v1';
 
     // ------------------------------------------------------------------
     // Mode table
