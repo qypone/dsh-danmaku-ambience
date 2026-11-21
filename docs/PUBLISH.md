@@ -49,9 +49,17 @@ git push -u origin main
 ```powershell
 cd E:\dshProject\plugindemo\danmaku
 
-npm login
-npm publish
+# 默认 registry 是只读镜像（npmmirror），发布必须显式指向官方
+npm.cmd login --registry=https://registry.npmjs.org
+npm.cmd publish --registry=https://registry.npmjs.org
 ```
+
+实测踩过的坑：
+
+- PowerShell 里 `npm` 会解析到 `npm.ps1`，被执行策略拦；用 `npm.cmd`。
+- 账号开了 2FA（auth-and-writes）时，`publish` 要么带 `--otp=123456`，要么用勾了 **Bypass 2FA** 的 granular token——`npm login` 发的会话 token 不够。
+- granular token 要选 **All packages** + **Read and write**。选 "Only select packages" 时发不了**还不存在**的新包（会报 `You may not perform that action with these credentials`）。
+- 首次发布会生成 `0.0.0-stage` 占位版本；真实版本元数据立刻可见，但 tarball 要几分钟才落地，这期间 `npm view` 有版本、下载却 404，属正常，等即可。
 
 `package.json` 里 `name` 就是发布名——npm 只认这个字段，**`publishConfig.name` 是无效的**（npm 不支持改名发布）：
 
@@ -145,11 +153,12 @@ CI 过了**不等于**会合并。维护者还会人工读代码，看：
 - [x] `screenshots.json`（指向 `docs/preview.png`）
 - [x] 无 `@deepseek-ai/*` 出现在 `dependencies`
 - [x] 填好用户名占位符（`qypone`）
-- [ ] GitHub 仓库建好，加 `dsh-plugin` topic
-- [ ] 仓库创建满 1 天
-- [ ] `npm publish` 成功
+- [x] GitHub 仓库建好（https://github.com/qypone/dsh-danmaku-ambience），已加 `dsh-plugin` topic
+- [ ] 仓库创建满 1 天（2026-11-21 创建，最早 11-22 12:44 之后可提 PR）
+- [x] `npm publish` 成功（1.0.0 已上线，`latest` 指向 1.0.0）
+- [x] 本地安装验证（`dsh plugin --profile desktop add dsh-danmaku-ambience@1.0.0`）
 
-前 8 项我已用 `tools/audit-publish.cjs` 验证通过，可随时复跑：
+除「仓库满 1 天」外均已实测通过。`tools/audit-publish.cjs` 现为 **0 阻塞 + 1 条误报**：它只判断根目录有没有 `icon.svg`，而 catalog 用的是 `assets/icon-180.png`。
 
 ```powershell
 node tools\audit-publish.cjs
